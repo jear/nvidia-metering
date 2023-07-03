@@ -7,4 +7,6 @@
 
 ```
 kubectl explain --api-version="batch/v1beta1" cronjobs.spec
+kubectl explain --api-version="batch/v1" cronjobs.spec
+
 ```
