@@ -19,7 +19,11 @@ spec:
           containers:
             - name: nvidia-cuda
               image: nvidia/cuda:11.6.2-base-ubuntu20.04
-              args: ['node', 'cluster.js']
+#              args: ['node', 'cluster.js']
+              command:
+              - /bin/sh
+              - -c
+              - date; echo Hello from the Kubernetes cluster
               volumeMounts:
                 - name: nvidia-smi-volume
                   mountPath: /etc/nvidia-smi/logs
