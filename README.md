@@ -9,3 +9,21 @@ docker run --rm --runtime=nvidia --gpus all ${NVIDIA_CUDA_IMG}:${NVIDIA_CUDA_IMG
 2023/07/03 10:33:55.204, 1562220007789, Tesla T4, [N/A], 0, 15360, 6, 0
 
 ```
+
+```
+# Accounting
+sudo nvidia-smi -am 1
+nvidia-smi -q -d ACCOUNTING
+
+==============NVSMI LOG==============
+
+Timestamp                                 : Mon Jul  3 12:46:36 2023
+Driver Version                            : 525.125.06
+CUDA Version                              : 12.0
+
+Attached GPUs                             : 1
+GPU 00000000:07:00.0
+    Accounting Mode                       : Enabled
+    Accounting Mode Buffer Size           : 4000
+    Accounted Processes                   : None
+```
