@@ -11,7 +11,7 @@ docker run --rm --runtime=nvidia --gpus all ${NVIDIA_CUDA_IMG}:${NVIDIA_CUDA_IMG
 ```
 
 ```
-# Accounting
+# Accounting for each worker node
 sudo nvidia-smi -am 1
 Enabled Accounting Mode for GPU 00000000:13:00.0.
 Enabled Accounting Mode for GPU 00000000:37:00.0.
