@@ -1,0 +1,34 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: mycronjob
+  labels:
+    jobgroup: parallel
+spec:
+  schedule: "*/5 * * * *"
+  successfulJobsHistoryLimit: 0
+  failedJobsHistoryLimit: 0
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: kubejob
+          labels:
+            jobgroup: parallel
+        spec:
+          topologySpreadConstraints:
+            - maxSkew: 2
+              topologyKey: kubernetes.io/hostname
+              whenUnsatisfiable: DoNotSchedule
+              labelSelector:
+                matchLabels:
+                  jobgroup: parallel
+          containers:
+          - name: mycron-container
+            image: alpine
+            imagePullPolicy: IfNotPresent
+            command: ['sh', '-c', 'echo Job Pod is Running ; sleep 10']
+          restartPolicy: OnFailure
+          terminationGracePeriodSeconds: 0
+      parallelism: 5
+  concurrencyPolicy: Allow
