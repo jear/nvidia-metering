@@ -1,7 +1,11 @@
 # Help
 
-    # https://github.com/kubernetes-sigs/kubebuilder#kubebuilder
+# Using the parallelism to run multiple Job PODs, with topologySpreadConstraints to spread/schedule the PODs on all the nodes.
+# https://stackoverflow.com/questions/55901375/is-this-possible-to-schedule-cronjob-to-execute-on-each-of-kubernetes-nodes 
+
 
 ```
 kubectl explain --api-version="batch/v1beta1" cronjobs.spec
 ```
+
+# https://github.com/kubernetes-sigs/kubebuilder#kubebuilder
