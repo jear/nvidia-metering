@@ -18,7 +18,7 @@ spec:
           serviceAccountName: nvidia-smi-sa
           containers:
             - name: nvidia-cuda
-              image: 
+              image: nvidia/cuda:11.6.2-base-ubuntu20.04
               args: ['node', 'cluster.js']
               volumeMounts:
                 - name: nvidia-smi-volume
