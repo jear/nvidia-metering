@@ -1,0 +1,8 @@
+KubeLogExporter CronJob
+
+The KubeLogExporter cron job needs to fulfil the following requirements:
+
+    It needs to run every hour
+    It needs to be successful, e.g. no error when reading or storing a log occurs
+    It needs the use the service account that we discussed in the last article to have the proper access rights to namespaces, pods and logs
+    It needs to use a persistent volume to store the log files, so that independent of the actual node where the job runs the same log files are amended
