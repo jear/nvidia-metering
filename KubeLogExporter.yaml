@@ -4,29 +4,29 @@
 #    It needs the use a service account to have the proper access rights to namespaces, pods and logs
 #    It needs to use a persistent volume to store the log files, so that independent of the actual node where the job runs the same log files are amended
 
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: kube-log-exporter-cron
+  name: nvidia-smi-cron
 spec:
-  schedule: '0 * * * *'
+  schedule: '*/5 * * * *'
   jobTemplate:
     spec:
       completions: 1
       template:
         spec:
-          serviceAccountName: log-exporter-sa
+          serviceAccountName: nvidia-smi-sa
           containers:
-            - name: kube-log-exporter
-              image: docker.admantium.com/kube-log-exporter:0.1.9.12
+            - name: nvidia-cuda
+              image: 
               args: ['node', 'cluster.js']
               volumeMounts:
-                - name: log-exporter-volume
-                  mountPath: /etc/kube-log-exporter/logs
+                - name: nvidia-smi-volume
+                  mountPath: /etc/nvidia-smi/logs
           restartPolicy: Never
           volumes:
-            - name: log-exporter-volume
+            - name: nvidia-smi-volume
               persistentVolumeClaim:
-                claimName: log-exporter-pvc
+                claimName: nvidia-smi-pvc
           imagePullSecrets:
             - name: registry-secret
