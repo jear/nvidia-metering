@@ -1,15 +1,9 @@
-# The KubeLogExporter cron job needs to fulfil the following requirements:
-#    It needs to run every 5 minutes
-#    It needs to be successful, e.g. no error when reading or storing a log occurs
-#    It needs the use a service account to have the proper access rights to namespaces, pods and logs
-#    It needs to use a persistent volume to store the log files, so that independent of the actual node where the job runs the same log files are amended
-
 apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: nvidia-smi-cron
 spec:
-  schedule: '*/5 * * * *'
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       completions: 1
