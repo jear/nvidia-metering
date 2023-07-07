@@ -37,5 +37,5 @@ GPU 00000000:D8:00.0
 ```
 export QUERY_ACCOUNTED_APPS="pid,gpu_serial,gpu_name,gpu_utilization,time"
 
-docker run --rm --runtime=nvidia --gpus all ${NVIDIA_CUDA_IMG}:${NVIDIA_CUDA_IMG_TAG} nvidia-smi  --query-accounted-apps=${QUERY_ACCOUNTED_APPS} --format=${FORMAT}
+nvidia-smi  --query-accounted-apps=${QUERY_ACCOUNTED_APPS} --format=${FORMAT}
 ```
