@@ -1,4 +1,13 @@
 # nvidia-metering
+```
+export NVIDIA_CUDA_IMG="nvidia/cuda" 
+export NVIDIA_CUDA_IMG_TAG="11.6.2-base-ubuntu20.04"
+
+export NVIDIA_QUERY_GPU="timestamp,serial,name,mig.mode.current,utilization.gpu,memory.total,memory.used,utilization.memory" 
+export NVIDIA_FORMAT="csv,nounits,noheader" 
+
+export NVIDIA_SMI_QUERY_OUTPUT="$(nvidia-smi --query-gpu=${NVIDIA_QUERY_GPU} --format=${NVIDIA_FORMAT})" 
+```
 
 # Accounting for each worker node
 ```
@@ -8,8 +17,9 @@ Enabled Accounting Mode for GPU 00000000:37:00.0.
 Enabled Accounting Mode for GPU 00000000:D8:00.0.
 All done.
 ```
-```
 
+```
+# From nvidia-smi doc
 --query-compute-apps=
  List of currently active compute processes. Call --help-query-com-
  pute-apps for more info.
