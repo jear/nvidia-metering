@@ -1,4 +1,13 @@
 # nvidia-metering
+
+# Accounting for each worker node
+```
+sudo nvidia-smi -am 1
+Enabled Accounting Mode for GPU 00000000:13:00.0.
+Enabled Accounting Mode for GPU 00000000:37:00.0.
+Enabled Accounting Mode for GPU 00000000:D8:00.0.
+All done.
+```
 ```
 
 --query-compute-apps=
@@ -19,14 +28,7 @@ export QUERY_ACCOUNTED_APPS="pid,gpu_serial,gpu_name,gpu_utilization,time"
 nvidia-smi  --query-accounted-apps=${QUERY_ACCOUNTED_APPS} --format=${FORMAT}
 ```
 
-# Accounting for each worker node
 ```
-sudo nvidia-smi -am 1
-Enabled Accounting Mode for GPU 00000000:13:00.0.
-Enabled Accounting Mode for GPU 00000000:37:00.0.
-Enabled Accounting Mode for GPU 00000000:D8:00.0.
-All done.
-
 nvidia-smi -q -d ACCOUNTING
 
 ==============NVSMI LOG==============
