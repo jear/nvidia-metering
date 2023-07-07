@@ -13,7 +13,7 @@ spec:
             image: nvidia/cuda:11.6.2-base-ubuntu20.04
             imagePullPolicy: IfNotPresent
             command:
-            - /bin/sh
+            - /bin/bash
             - -c
-            - "nvidia-smi"
+            - "nvidia-smi --query-gpu='timestamp,serial,name,mig.mode.current,utilization.gpu,memory.total,memory.used,utilization.memory' --format='csv,nounits,noheader'"
           restartPolicy: OnFailure
