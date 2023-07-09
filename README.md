@@ -1,4 +1,6 @@
 # Capacity planning
+* OpsRamp
+  * https://docs.opsramp.com/integrations/gpu-monitoring/nvidia-gpu-monitor/
 * Datadog
   * https://docs.datadoghq.com/integrations/nvml/
   * https://blog.searce.com/nvidia-a100-migs-gpu-monitoring-using-datadog-7c3d2378184f
