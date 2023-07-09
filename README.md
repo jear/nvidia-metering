@@ -1,13 +1,13 @@
 # Capacity planning
 * [krossboard.app]
-  *  (https://krossboard.app/)
+  *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
 * [Kubecost]
-  * kubecost (https://docs.kubecost.com/architecture/user-metrics)
+  * https://docs.kubecost.com/architecture/user-metrics
 * [run.ai]
-  * (https://www.run.ai/gpu-optimization)
+  * https://www.run.ai/gpu-optimization
 * [Others]
-  * (https://github.com/dastergon/awesome-sre#capacity-planning)
+  * https://github.com/dastergon/awesome-sre#capacity-planning
 
 
 # nvidia-metering ( nvidia-smi only )
