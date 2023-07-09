@@ -1,6 +1,7 @@
 # Capacity planning
 * Datadog
   * https://docs.datadoghq.com/integrations/nvml/
+  * https://blog.searce.com/nvidia-a100-migs-gpu-monitoring-using-datadog-7c3d2378184f
 * [krossboard.app]  CNCF  ???
   *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
