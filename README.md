@@ -2,10 +2,10 @@
 * [krossboard.app]
   *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
-* [Opencost]
+* [Opencost] CNCF ->  https://landscape.cncf.io/card-mode?category=continuous-optimization&grouping=category
   * https://www.opencost.io/
   * https://github.com/opencost/opencost
-* [Kubecost]
+* [Kubecost]  CNCF ->  https://landscape.cncf.io/card-mode?category=continuous-optimization&grouping=category
   * Made from Opencost : https://docs.kubecost.com/architecture/opencost-product-comparison
   * https://docs.kubecost.com/architecture/user-metrics
   * https://github.com/kubecost/cost-analyzer-helm-chart
