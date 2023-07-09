@@ -2,8 +2,12 @@
 * [krossboard.app]
   *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
+* [Opencost]
+  * https://www.opencost.io/
+  * https://github.com/opencost/opencost
 * [Kubecost]
   * https://docs.kubecost.com/architecture/user-metrics
+  * https://github.com/kubecost/cost-analyzer-helm-chart
 * [run.ai]
   * https://www.run.ai/gpu-optimization
 * [Others]
