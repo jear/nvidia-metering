@@ -1,5 +1,5 @@
 # Capacity planning
-* [krossboard.app]
+* [krossboard.app]  CNCF  ???
   *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
 * [Opencost] CNCF ->  https://landscape.cncf.io/card-mode?category=continuous-optimization&grouping=category
