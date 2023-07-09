@@ -2,7 +2,7 @@
 * [krossboard.app]
   *  (https://krossboard.app/)
 * [Kubecost]
-  * kubecost
+  * kubecost (https://docs.kubecost.com/architecture/user-metrics)
 * [run.ai]
   * (https://www.run.ai/gpu-optimization)
 * [Others]
