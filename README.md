@@ -1,8 +1,12 @@
 # Capacity planning
-
-https://github.com/dastergon/awesome-sre#capacity-planning
-https://krossboard.app/
-https://www.run.ai/gpu-optimization
+* [krossboard.app]
+  *  (https://krossboard.app/)
+* [Kubecost]
+  * kubecost
+* [run.ai]
+  * (https://www.run.ai/gpu-optimization)
+* [Others]
+  * (https://github.com/dastergon/awesome-sre#capacity-planning)
 
 
 # nvidia-metering
