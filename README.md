@@ -9,6 +9,8 @@
   * Made from Opencost : https://docs.kubecost.com/architecture/opencost-product-comparison
   * https://docs.kubecost.com/architecture/user-metrics
   * https://github.com/kubecost/cost-analyzer-helm-chart
+* [kube-opex-analytics]
+  * https://github.com/rchakode/kube-opex-analytics
 * [run.ai]
   * https://www.run.ai/gpu-optimization
 * [Others]
