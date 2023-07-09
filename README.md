@@ -1,3 +1,10 @@
+# Capacity planning
+
+https://github.com/dastergon/awesome-sre#capacity-planning
+https://krossboard.app/
+https://www.run.ai/gpu-optimization
+
+
 # nvidia-metering
 ```
 export NVIDIA_CUDA_IMG="nvidia/cuda" 
