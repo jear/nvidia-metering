@@ -1,4 +1,6 @@
 # Capacity planning
+* Datadog
+  * https://docs.datadoghq.com/integrations/nvml/
 * [krossboard.app]  CNCF  ???
   *  https://krossboard.app/
   *  https://github.com/2-alchemists/krossboard-kubernetes-operator
