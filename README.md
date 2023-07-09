@@ -1,6 +1,7 @@
 # Capacity planning
 * [krossboard.app]
   *  (https://krossboard.app/)
+  *  https://github.com/2-alchemists/krossboard-kubernetes-operator
 * [Kubecost]
   * kubecost (https://docs.kubecost.com/architecture/user-metrics)
 * [run.ai]
@@ -9,7 +10,7 @@
   * (https://github.com/dastergon/awesome-sre#capacity-planning)
 
 
-# nvidia-metering
+# nvidia-metering ( nvidia-smi only )
 ```
 export NVIDIA_CUDA_IMG="nvidia/cuda" 
 export NVIDIA_CUDA_IMG_TAG="11.6.2-base-ubuntu20.04"
