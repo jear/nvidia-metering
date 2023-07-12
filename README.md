@@ -21,6 +21,12 @@
 * [Others]
   * https://github.com/dastergon/awesome-sre#capacity-planning
 
+# nvidia GPU operator install
+* https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html#option-2-auto-upgrade-crd-using-helm-hook
+```
+helm repo add nvidia https://helm.ngc.nvidia.com/nvidia    && helm repo update
+helm upgrade --install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --set operator.upgradeCRD=true --disable-openapi-validation 
+```
 
 # nvidia-metering ( nvidia-smi only )
 ```
